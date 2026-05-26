@@ -10,6 +10,11 @@ const nextConfig: NextConfig = {
         hostname: 'vaani.iisc.ac.in',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'translation-plugin.bhashini.co.in',
+        pathname: '/**',
+      },
     ],
   },
 
