@@ -16,12 +16,12 @@ const nextConfig: NextConfig = {
             value: [
               "default-src 'self'",
               "script-src 'self' 'unsafe-eval' 'unsafe-inline'",
-              "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-              "font-src 'self' https://fonts.gstatic.com",
+              "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://api.fontshare.com",
+              "font-src 'self' https://fonts.gstatic.com https://api.fontshare.com https://cdn.fontshare.com",
               "img-src 'self' data: https:",
               // Allow Looker Studio and GA4 API resources
               "frame-src 'self' https://lookerstudio.google.com https://datastudio.google.com",
-              "connect-src 'self' https://analyticsdata.googleapis.com https://oauth2.googleapis.com",
+              "connect-src 'self' https://analyticsdata.googleapis.com https://oauth2.googleapis.com https://api.fontshare.com",
             ].join('; '),
           },
         ],
