@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "oauth:setup": "node scripts/oauth-setup.mjs"
   },
   "dependencies": {
     "@google-analytics/data": "^6.0.0",
