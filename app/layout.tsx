@@ -32,6 +32,18 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} h-full antialiased`}
     >
+      <head>
+        {/* Fontshare — General Sans & Satoshi (loaded via <link>, not @import, to avoid PostCSS ordering conflict) */}
+        <link rel="preconnect" href="https://api.fontshare.com" />
+        <link
+          rel="stylesheet"
+          href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap"
+        />
+        <link
+          rel="stylesheet"
+          href="https://api.fontshare.com/v2/css?f[]=satoshi@400,700&display=swap"
+        />
+      </head>
       <body className="h-full">
         {/*
          * AppShell renders the fixed sidebar + scrollable main content.
